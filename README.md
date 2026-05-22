@@ -37,6 +37,52 @@ Implemented methods include:
 
 
 
+# Dataset
+
+## Orthopedic Implant Dataset
+
+The orthopedic dataset contains:
+- X-ray images
+- segmentation masks
+- implant labels
+- patient identifiers
+
+### Training CSV Structure
+
+| Column Name | Description |
+|||
+| filenames | X-ray image filename |
+| labels | Implant class label |
+| patient_id | Patient identifier |
+| masks | Segmentation mask filename |
+| valid_mask | Mask availability indicator |
+
+### Example Implant Labels
+
+- Hip_SmithAndNephew_Polarstem_NilCol
+- Knee_SmithAndNephew_GenesisII
+
+<br>
+
+## Pacemaker Dataset
+
+The pacemaker dataset contains manufacturer-level and model-level radiographs organized into subdirectories.
+
+The dataset includes:
+- 45+ device categories
+- manufacturer-specific subclasses
+- varying implant orientations
+- real-world X-ray imaging conditions
+
+Manufacturers represented include:
+- BIO
+- BOS
+- MDT
+- SOR
+- STJ
+
+
+
 # Research Pipeline
 
 <p align="center">
