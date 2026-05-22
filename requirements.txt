@@ -1,0 +1,23 @@
+torch
+torchvision
+torchaudio
+--extra-index-url https://download.pytorch.org/whl/cu118
+pandas
+numpy
+pillow
+matplotlib
+tqdm
+scikit-learn
+scipy
+jupyter
+ipykernel
+notebook
+timm
+ftfy
+regex
+opencv-python
+seaborn
+plotly
+wandb
+tensorboard
+git+https://github.com/openai/CLIP.git
