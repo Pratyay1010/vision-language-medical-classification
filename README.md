@@ -146,10 +146,19 @@ The training set contains between 20 and 35 examples per class.
 
 # Research Pipeline
 
-<p align="center">
-  <img src="assets/results/orthonet_zero_shot.png" width="430">
-  <img src="assets/results/pacemaker_zero_shot.png" width="430">
-</p>
+<table align="center">
+<tr>
+<td align="center">
+<img src="assets/results/orthonet_zero_shot.png" width="420"><br>
+<sub>OrthoNet Zero-Shot CLIP Evaluation</sub>
+</td>
+
+<td align="center">
+<img src="assets/results/pacemaker_zero_shot.png" width="420"><br>
+<sub>Pacemaker Zero-Shot CLIP Evaluation</sub>
+</td>
+</tr>
+</table>
 
 ```text
 Supervised ViTs
