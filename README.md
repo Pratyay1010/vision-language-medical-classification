@@ -1,6 +1,6 @@
 # Medical Vision-Language Learning for Implant Classification
 
----
+
 
 # Overview
 
@@ -19,7 +19,7 @@ Methods explored:
   - CoCoOp
   - MaPLe
 
----
+
 
 # Dataset
 
@@ -35,7 +35,7 @@ The orthopedic dataset contains:
 ### Training CSV Structure
 
 | Column | Description |
-|---|---|
+|||
 | filenames | X-ray image filename |
 | labels | Implant class label |
 | patient_id | Patient identifier |
@@ -51,7 +51,7 @@ The orthopedic dataset contains:
 
 - Total training samples: 1169
 
----
+
 
 ## Pacemaker Dataset
 
@@ -62,7 +62,7 @@ The pacemaker training dataset contains between 20 and 35 images per class.
 ### Manufacturer Classes
 
 | Manufacturer | Model Groups |
-|---|---|
+|||
 | BIO | Actros_Philos, Cyclos, Evia |
 | BOS | Altrua_Insignia, Autogen_Teligen_Energen_Cognis, Contak Renewal 4, Contak Renewal TR2, Emblem, Ingenio, Proponent, Ventak Prizm, Visionist, Vitality |
 | MDT | AT500, Advisa, Azure, Claria_Evera_Viva, EnRhythm, Sigma, Syncra |
@@ -72,7 +72,7 @@ The pacemaker training dataset contains between 20 and 35 images per class.
 ### Example Class Counts
 
 | Class | Files |
-|---|---|
+|||
 | BIO - Actros_Philos | 35 |
 | BIO - Cyclos | 22 |
 | BOS - Emblem | 35 |
@@ -82,7 +82,7 @@ The pacemaker training dataset contains between 20 and 35 images per class.
 | STJ - Accent | 35 |
 | STJ - Victory | 33 |
 
----
+
 
 # Research Pipeline
 
@@ -97,7 +97,7 @@ Prompt Learning Adaptation
 (CoOp / CoCoOp / MaPLe)
 ```
 
----
+
 
 # Models Explored
 
@@ -117,7 +117,7 @@ Prompt Learning Adaptation
 - CoCoOp
 - MaPLe
 
----
+
 
 # Experimental Results
 
@@ -135,7 +135,7 @@ Prompt Learning Adaptation
   <img src="assets/results/orthonet_vit_dino.png" width="850">
 </p>
 
----
+
 
 ## Pacemaker ViT Experiments
 
@@ -151,7 +151,7 @@ Prompt Learning Adaptation
   <img src="assets/results/pacemaker_vit_dino.png" width="850">
 </p>
 
----
+
 
 # Zero-Shot CLIP Evaluation
 
@@ -162,7 +162,7 @@ Prompt Learning Adaptation
 
 CLIP was evaluated without task-specific fine-tuning using prompt-based image-text similarity matching.
 
----
+
 
 # Prompt Learning Results
 
@@ -177,7 +177,7 @@ Methods explored:
 - CoCoOp
 - MaPLe
 
----
+
 
 # Stage 1 Manufacturer Classification
 
@@ -185,7 +185,7 @@ Methods explored:
   <img src="assets/results/pacemaker_stage1_training.png" width="850">
 </p>
 
----
+
 
 # Installation
 
@@ -197,7 +197,7 @@ cd your-repo-name
 pip install -r requirements.txt
 ```
 
----
+
 
 # Training
 
@@ -213,7 +213,7 @@ python scripts/train_orthonet_vit.py
 python scripts/train_pacemaker_vit.py
 ```
 
----
+
 
 # Zero-Shot Evaluation
 
@@ -229,7 +229,7 @@ python scripts/zero_shot_orthonet.py
 python scripts/zero_shot_pacemaker.py
 ```
 
----
+
 
 # Prompt Learning
 
