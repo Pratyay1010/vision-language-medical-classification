@@ -12,6 +12,8 @@
   Exploring vision-language learning pipelines for orthopedic implant and pacemaker classification using supervised ViTs, zero-shot CLIP, and prompt adaptation methods.
 </p>
 
+<br>
+
 # Overview
 
 This repository explores vision-language learning approaches for medical implant classification using:
@@ -32,6 +34,8 @@ The repository investigates:
 - supervised learning
 - zero-shot transfer
 - prompt learning adaptation in specialized medical domains
+
+---
 
 # Dataset
 
@@ -60,7 +64,7 @@ The orthopedic dataset contains:
 | Hip_SmithAndNephew_Polarstem_NilCol |
 | Knee_SmithAndNephew_GenesisII |
 
----
+<br>
 
 ## Pacemaker Dataset
 
@@ -138,11 +142,13 @@ The training set contains between 20 and 35 examples per class.
 | Victory | 33 |
 | Zephyr | 35 |
 
+---
+
 # Research Pipeline
 
 <p align="center">
-  <img src="assets/results/orthonet_zero_shot.png" width="420">
-  <img src="assets/results/pacemaker_zero_shot.png" width="420">
+  <img src="assets/results/orthonet_zero_shot.png" width="430">
+  <img src="assets/results/pacemaker_zero_shot.png" width="430">
 </p>
 
 ```text
@@ -154,41 +160,52 @@ Prompt Learning Adaptation
 (CoOp / CoCoOp / MaPLe)
 ```
 
+---
+
 # Dataset Examples
 
 ## Orthopedic Implant Samples
 
 <p align="center">
-  <img src="assets/examples/orthopedic/0008_32_20_2_A-P00_UNIL.png" width="220">
-  <img src="assets/examples/orthopedic/0008_32_20_2_A-P00_MASK.png" width="220">
-  <img src="assets/examples/orthopedic/0009_32_22_2_A-P00_UNIL.png" width="220">
-  <img src="assets/examples/orthopedic/0009_32_22_2_A-P00_MASK.png" width="220">
+  <img src="assets/examples/orthopedic/0008_32_20_2_A-P00_UNIL.png" width="180">
+  <img src="assets/examples/orthopedic/0009_32_22_2_A-P00_UNIL.png" width="180">
+  <img src="assets/examples/orthopedic/0010_18_01_L0416_UNIL.png" width="180">
+  <img src="assets/examples/orthopedic/0016_11_05_L0417_UNIL.png" width="180">
 </p>
 
 <p align="center">
-  <img src="assets/examples/orthopedic/0010_18_01_L0416_UNIL.png" width="220">
-  <img src="assets/examples/orthopedic/0010_18_01_L0416_MASK.png" width="220">
-  <img src="assets/examples/orthopedic/0016_11_05_L0417_UNIL.png" width="220">
-  <img src="assets/examples/orthopedic/0016_11_05_L0417_MASK.png" width="220">
+  <sub>Representative orthopedic implant radiographs from the OrthoNet dataset.</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/examples/orthopedic/0008_32_20_2_A-P00_MASK.png" width="180">
+  <img src="assets/examples/orthopedic/0009_32_22_2_A-P00_MASK.png" width="180">
+  <img src="assets/examples/orthopedic/0010_18_01_L0416_MASK.png" width="180">
+  <img src="assets/examples/orthopedic/0016_11_05_L0417_MASK.png" width="180">
 </p>
 
 <p align="center">
-  <sub>Sample orthopedic implant X-rays and segmentation masks.</sub>
+  <sub>Corresponding segmentation masks.</sub>
 </p>
+
+---
 
 ## Pacemaker Samples
 
 <p align="center">
-  <img src="assets/examples/pacemaker/IMP1508004.jpg" width="170">
-  <img src="assets/examples/pacemaker/IMP1521150.jpg" width="170">
-  <img src="assets/examples/pacemaker/IMP1534223.jpg" width="170">
-  <img src="assets/examples/pacemaker/IMP1535081.jpg" width="170">
-  <img src="assets/examples/pacemaker/IMP1732001.jpg" width="170">
+  <img src="assets/examples/pacemaker/IMP1508004.jpg" width="160">
+  <img src="assets/examples/pacemaker/IMP1521150.jpg" width="160">
+  <img src="assets/examples/pacemaker/IMP1534223.jpg" width="160">
+  <img src="assets/examples/pacemaker/IMP1535081.jpg" width="160">
 </p>
 
 <p align="center">
-  <sub>Sample pacemaker X-ray images used for manufacturer-level classification experiments.</sub>
+  <sub>Sample pacemaker radiographs used for manufacturer-level classification experiments.</sub>
 </p>
+
+---
 
 # Models Explored
 
@@ -208,6 +225,8 @@ Prompt Learning Adaptation
 - CoCoOp
 - MaPLe
 
+---
+
 # ViT Training Progress
 
 ## OrthoNet Experiments
@@ -216,13 +235,19 @@ Prompt Learning Adaptation
   <img src="assets/results/orthonet_vit_imagenet.png" width="850">
 </p>
 
+<br>
+
 <p align="center">
   <img src="assets/results/orthonet_vit_clip.png" width="850">
 </p>
 
+<br>
+
 <p align="center">
   <img src="assets/results/orthonet_vit_dino.png" width="850">
 </p>
+
+---
 
 ## Pacemaker Experiments
 
@@ -230,22 +255,32 @@ Prompt Learning Adaptation
   <img src="assets/results/pacemaker_vit_imagenet.png" width="850">
 </p>
 
+<br>
+
 <p align="center">
   <img src="assets/results/pacemaker_vit_clip.png" width="850">
 </p>
+
+<br>
 
 <p align="center">
   <img src="assets/results/pacemaker_vit_dino.png" width="850">
 </p>
 
+---
+
 # Zero-Shot CLIP Evaluation
 
 <p align="center">
-  <img src="assets/results/orthonet_zero_shot.png" width="420">
-  <img src="assets/results/pacemaker_zero_shot.png" width="420">
+  <img src="assets/results/orthonet_zero_shot.png" width="430">
+  <img src="assets/results/pacemaker_zero_shot.png" width="430">
 </p>
 
-CLIP was evaluated without task-specific fine-tuning using prompt-based image-text similarity matching.
+<p align="center">
+  <sub>Zero-shot CLIP evaluation using prompt-based image-text similarity matching.</sub>
+</p>
+
+---
 
 # Prompt Learning Results
 
@@ -255,18 +290,19 @@ CLIP was evaluated without task-specific fine-tuning using prompt-based image-te
   <img src="assets/results/maple_results.png" width="280">
 </p>
 
-Prompt adaptation methods explored:
-- CoOp
-- CoCoOp
-- MaPLe
+<p align="center">
+  <sub>Prompt adaptation methods: CoOp, CoCoOp, and MaPLe.</sub>
+</p>
 
-for improving medical domain alignment and classification performance.
+---
 
 # Stage 1 Manufacturer Classification
 
 <p align="center">
   <img src="assets/results/pacemaker_stage1_training.png" width="850">
 </p>
+
+---
 
 # Dataset Note
 
@@ -280,15 +316,19 @@ The repository contains:
 
 to demonstrate the complete research pipeline.
 
+---
+
 # Installation
 
 ```bash
 git clone https://github.com/Pratyay1010/vision-language-medical-classification.git
 
-cd your-repo-name
+cd vision-language-medical-classification
 
 pip install -r requirements.txt
 ```
+
+---
 
 # Training
 
@@ -304,6 +344,8 @@ python scripts/train_orthonet_vit.py
 python scripts/train_pacemaker_vit.py
 ```
 
+---
+
 # Zero-Shot Evaluation
 
 ## OrthoNet
@@ -317,6 +359,8 @@ python scripts/zero_shot_orthonet.py
 ```bash
 python scripts/zero_shot_pacemaker.py
 ```
+
+---
 
 # Prompt Learning
 
