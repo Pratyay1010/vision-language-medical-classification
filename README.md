@@ -43,86 +43,100 @@ The orthopedic dataset contains:
 - implant labels
 - patient identifiers
 
-### Training CSV Columns
+### Training CSV Structure
 
-- filenames
-- labels
-- patient_id
-- masks
-- valid_mask
+| Column Name | Description |
+|---|---|
+| filenames | X-ray image filename |
+| labels | Implant class label |
+| patient_id | Patient identifier |
+| masks | Segmentation mask filename |
+| valid_mask | Mask availability indicator |
 
 ### Sample Labels
 
-- Hip_SmithAndNephew_Polarstem_NilCol
-- Knee_SmithAndNephew_GenesisII
+| Example Implant Labels |
+|---|
+| Hip_SmithAndNephew_Polarstem_NilCol |
+| Knee_SmithAndNephew_GenesisII |
 
 ---
 
 ## Pacemaker Dataset
 
-### Train (45 directories)
+### Train Set (45 Directories)
 
 The training set contains between 20 and 35 examples per class.
 
-#### BIO
+### BIO
 
-- Actros_Philos — 35 files
-- Cyclos — 22 files
-- Evia — 23 files
+| Class | Files |
+|---|---|
+| Actros_Philos | 35 |
+| Cyclos | 22 |
+| Evia | 23 |
 
-#### BOS
+### BOS
 
-- Altrua_Insignia — 35 files
-- Autogen_Teligen_Energen_Cognis — 35 files
-- Contak Renewal 4 — 35 files
-- Contak Renewal TR2 — 34 files
-- ContakTR_Discovery_Meridian_Pulsar Max — 35 files
-- Emblem — 35 files
-- Ingenio — 35 files
-- Proponent — 35 files
-- Ventak Prizm — 28 files
-- Visionist — 35 files
-- Vitality — 35 files
+| Class | Files |
+|---|---|
+| Altrua_Insignia | 35 |
+| Autogen_Teligen_Energen_Cognis | 35 |
+| Contak Renewal 4 | 35 |
+| Contak Renewal TR2 | 34 |
+| ContakTR_Discovery_Meridian_Pulsar Max | 35 |
+| Emblem | 35 |
+| Ingenio | 35 |
+| Proponent | 35 |
+| Ventak Prizm | 28 |
+| Visionist | 35 |
+| Vitality | 35 |
 
-#### MDT
+### MDT
 
-- AT500 — 33 files
-- Adapta_Kappa_Sensia_Versa — 35 files
-- Advisa — 35 files
-- Azure — 35 files
-- C20_T20 — 35 files
-- C60 DR — 35 files
-- Claria_Evera_Viva — 35 files
-- Concerto_Consulta_Maximo_Protecta_Secura — 35 files
-- EnRhythm — 35 files
-- Insync III — 35 files
-- Maximo — 25 files
-- REVEAL — 21 files
-- REVEAL LINQ — 27 files
-- Sigma — 35 files
-- Syncra — 35 files
-- Vita II — 24 files
+| Class | Files |
+|---|---|
+| AT500 | 33 |
+| Adapta_Kappa_Sensia_Versa | 35 |
+| Advisa | 35 |
+| Azure | 35 |
+| C20_T20 | 35 |
+| C60 DR | 35 |
+| Claria_Evera_Viva | 35 |
+| Concerto_Consulta_Maximo_Protecta_Secura | 35 |
+| EnRhythm | 35 |
+| Insync III | 35 |
+| Maximo | 25 |
+| REVEAL | 21 |
+| REVEAL LINQ | 27 |
+| Sigma | 35 |
+| Syncra | 35 |
+| Vita II | 24 |
 
-#### SOR
+### SOR
 
-- Elect — 35 files
-- Elect XS Plus — 25 files
-- MiniSwing — 23 files
-- Neway — 32 files
-- Ovatio — 20 files
-- Reply — 35 files
-- Rhapsody_Symphony — 35 files
-- Thesis — 31 files
+| Class | Files |
+|---|---|
+| Elect | 35 |
+| Elect XS Plus | 25 |
+| MiniSwing | 23 |
+| Neway | 32 |
+| Ovatio | 20 |
+| Reply | 35 |
+| Rhapsody_Symphony | 35 |
+| Thesis | 31 |
 
-#### STJ
+### STJ
 
-- Accent — 35 files
-- Allure Quadra — 35 files
-- Ellipse — 35 files
-- Identity — 35 files
-- Quadra Assura_Unify — 35 files
-- Victory — 33 files
-- Zephyr — 35 files
+| Class | Files |
+|---|---|
+| Accent | 35 |
+| Allure Quadra | 35 |
+| Ellipse | 35 |
+| Identity | 35 |
+| Quadra Assura_Unify | 35 |
+| Victory | 33 |
+| Zephyr | 35 |
 
 # Research Pipeline
 
